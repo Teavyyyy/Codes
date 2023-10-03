@@ -1,0 +1,17 @@
+import numpy as np
+
+Pew = np.array([1,6,8,4,9])
+print (Pew)
+x=1
+
+def linearsearch(Pew,x):
+  for i in range(len(Pew)):
+    if Pew[i] == x:
+      return i
+  return -1
+
+result = linearsearch(Pew,x)
+if (result == -1):
+  print("Wrong one")
+else:
+  print ("i am here")
